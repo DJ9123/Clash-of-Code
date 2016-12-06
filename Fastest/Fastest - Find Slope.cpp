@@ -13,5 +13,4 @@ int main(){
 
 		cout << a * x + b << endl;
 	}
-
 }
