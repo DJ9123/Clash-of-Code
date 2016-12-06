@@ -9,7 +9,7 @@ int main()
 	for (int i = 0; i < N; i++) {
 		int E;
 		cin >> E;
-		E++;
+		E++; 
 		cout << alphabet[E];
 	}
 }
