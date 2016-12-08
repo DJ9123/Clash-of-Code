@@ -1,0 +1,72 @@
+/*
+https://www.codingame.com/clashofcode/clash/report/2759746cad7ae08bb9cd8390261be4636a2d27
+The game mode is REVERSE: You do not have access to the statement. You have to guess what to do by observing the following set of tests:
+01 Test 1
+2
+abcba
+crab
+true
+false
+02 Test 2
+2
+crab
+crab
+false
+false
+03 Test 3
+2
+radar
+crab
+true
+false
+04 Test 4
+4
+sonar
+crab
+radar
+evitative
+false
+false
+true
+true
+05 Test 5
+2
+evasive
+crab
+false
+false
+06 Test 6
+5
+tattarrattat
+sonar
+crab
+radar
+evitative
+true
+false
+false
+true
+true
+*/
+
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+
+int main(){
+    int N;
+    cin >> N; cin.ignore();
+    for (int i = 0; i < N; i++) {
+        string W;
+        cin >> W;
+        string temp = string(W.rbegin(), W.rend());
+        if(W == temp)
+            cout << "true";
+        else
+            cout << "false"; 
+        cout << endl;
+    }
+
+    
+}
